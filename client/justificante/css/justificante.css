@@ -1,0 +1,352 @@
+.form{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+}
+
+/*NOMBRE COMPLETO*/
+
+.campo-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.label{
+    color: var(--black);
+    font-size: 1em;
+    counter-reset: var(--black);
+    font-weight: 600;
+    pointer-events: none;
+    margin-right: 12px;
+}
+
+.input-1 {
+    width: 350px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid var(--black);
+    outline: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-top: 5px;
+    color: var(--black);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/*CEDULA*/
+
+.campo-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.box-cedula{
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.campo2-1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.select{
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-right: 5px;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.input-2{
+    width: 250px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid var(--black);
+    outline: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-top: 5px;
+    color: var(--black);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.parrafo{
+    margin-top: 5px;
+    color: var(--black);
+    font-size: 1em;
+    counter-reset: var(--black);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+/*FECHA*/
+
+.campo-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.input-3{
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-top: 5px;
+    color: var(--black);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/*DIAGNOSTICO Y TRATAMIENTO*/
+
+.campo-4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.area{
+    width: 80%;
+    height: 80px;
+    border: 1px solid var(--oscuro);
+    outline: none;
+    border-radius: 5px;
+    padding: .5em;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-top: 10px;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    resize: none;
+}
+
+/*PARRAFO ATENDER*/
+
+.atender{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.atender .parrafo{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*FIRMA*/
+
+.firma{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.input-4{
+    width: 300px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 3px solid var(--black);
+    outline: none;
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-top: 5px;
+    color: var(--black);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+    pointer-events: none;
+}
+
+/*BOTONES*/
+
+.boton{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 0px;
+}
+
+.btn {
+    --color: #05152e;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+    font-size: 17px;
+    border: 3px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+
+    margin-bottom: 40px;
+}
+   
+.btn::before, .btn::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+   
+.btn::before {
+    top: -1em;
+    left: -1em;
+}
+   
+.btn::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+   
+.btn:hover::before, .btn:hover::after {
+    height: 410px;
+    width: 410px;
+}
+   
+.btn:hover {
+    color: var(--white);
+}
+   
+.btn:active {
+    filter: brightness(.8);
+}
+
+@media (max-width: 930px){
+    .campo-1{
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .input-1 {
+        width: 100%;
+    }
+
+    .label{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px){
+    
+    .atender .parrafo{
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 705px){
+    .parrafo{
+        color: var(--black);
+        font-size: .8em;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .input-2{
+        width: 100%;
+    }
+
+    .campo2-1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 550px){
+
+    .campo-1{
+        width: 85%;
+    }
+
+    .campo-3{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .label{
+        font-size: 14px;
+    }
+    
+    .input-4{
+        width: 80%;
+    }
+}

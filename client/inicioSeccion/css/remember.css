@@ -1,0 +1,77 @@
+.remember-forgot{
+    font-size: .9em;
+    color: var(--black);
+    font-weight: 500;
+    margin: -12px 0 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot-pass{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.remember-forgot label input {
+    accent-color: var(--black);
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: var(--oscuro);
+    text-decoration: none;
+    padding-top: 1px;
+    font-weight: bold;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.forgot-reme{
+    padding-top: 13px;
+    font-size: 17px;
+}
+
+.checkbox{
+    cursor: pointer;
+}
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: var(--oscuro);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.login-register{
+    font-size: .9em;
+    color: var(--black);
+    text-align: center;
+    font-weight: 500;
+    margin: 5px 0 10px;
+}
+
+.login-register p a{
+    color: var(--oscuro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 410px){
+
+    .login-register{
+        font-size: .8em;
+    }
+}

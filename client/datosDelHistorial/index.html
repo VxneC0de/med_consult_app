@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <title>Historial Medico</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h2 class="logo">Med<span>Consult</span></h2>
+        </div>
+
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="#" class="active" id="btnPerfil">Inicio</a>
+                <a href="#" id="btnBusqueda">Busqueda</a>
+                <a href="#" id="btnPagos">Pagos</a>
+                <button class="btnLogin-popup" id="btnClose">Cerrar Sección</button>
+            </nav>
+        </div>
+
+        <div class="bx" id="menu-icon">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+
+    </header>
+
+    <section class="main-container open1" id="historial">
+
+        <div class="form-box">
+            <h2 class="form-h2">Historial Medico</h2>
+
+            <form class="form" action="#">
+
+                <h4 class="form-h4">Antecedentes del Paciente</h4>
+
+                <div class="textArea">
+
+                    <label class="box-title">Notas y Observaciones <span>*</span></label>
+
+                    <textarea class="area" name="" id="notasObservaciones" cols="30" rows="10" required></textarea>
+
+                    <div class="error"></div>
+
+                </div>
+
+                <div class="fechas">
+
+                    <p class="box-title">Fecha y hora del registro del Historial <span>*</span></p>
+
+                    <div class="box-7">
+                        <label class="label" for="fechaCita">Fecha:</label>
+                        <input class="input" type="date" id="fechaCita" name="fechaCita" required>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="box-7">
+                        <label class="label" for="horaCita">Hora:</label>
+                        <input class="input" type="time" id="horaCita" name="horaCita" required>
+                        <div class="error"></div>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <div class="botones">
+
+                <button class="btn" type="submit" id="btnAtras">Atras</button>
+                <button class="btn" type="submit" id="crearPDF">Crear PDF</button>
+
+            </div>
+    
+        </div>
+
+    </section>
+
+
+    <script src="./src/js/index.js"></script>
+
+    <script type="module" src="./src/js/historialDatos.js"></script>
+    <script type="module" src="./src/js/validacionesHistorial.js"></script>
+
+    <!-- <script type="module" src="./src/firebase/firestore.js"></script> -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+
+</body>
+</html>

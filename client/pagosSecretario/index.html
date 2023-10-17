@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    <title>Pagos</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h2 class="logo">Med<span>Consult</span></h2>
+        </div>
+
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="#" class="active" id="btnPerfil">Inicio</a>
+                <a href="#" id="btnRegistro">Registro</a>
+                <a href="#" id="btnBusquedaSecreatario">Busqueda</a>
+                <button class="btnLogin-popup" id="closeSection">Cerrar Sección</button>
+            </nav>
+        </div>
+
+        <div class="bx" id="menu-icon">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+
+    </header>
+
+    
+
+    <section class="main-container" id="pagos">
+
+        <div class="box-1">
+
+            <h2 class="main-title">Pagos</h2>
+
+        <div class="pagos-box">
+            
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th class="th">N° de Consulta</th>
+                        <th class="th">Nombre del Paciente</th>
+                        <th class="th">Monto en $</th>
+                        <th class="th">Monto en Bs</th>
+                        <th class="th">N° de Referencia</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tbody" id="listPagos">
+
+                </tbody>
+
+            </table>
+
+            <div id="loader" class="loader">
+            </div>
+    
+        </div>
+
+        <div class="box-2">
+
+            <h2 class="main-title" id="total">Total del Día</h2>
+
+        <div class="pagos-box">
+            
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th class="th">N° de Consultas</th>
+                        <th class="th">Total en $</th>
+                        <th class="th">Total en Bs</th>
+                    </tr>
+                </thead>
+
+                <tbody class="tbody" id="listPagosTotal">
+
+                    <tr>
+                        <td class="td td2" id="numeroConsulta" data-label="N° de Consultas"></td>
+                        <td class="td td2" id="totalDivisa" data-label="Total en $"></td>
+                        <td class="td td2" id="totalBolivares" data-label="Total en Bs"></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+    
+        </div>
+
+        </div>
+
+    </section>
+    
+
+
+    <script type="module" src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/pagosList.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

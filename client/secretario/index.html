@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    <title>MedConsult-Secretario</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <h2 class="logo">Med<span>Consult</span></h2>
+        </div>
+
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="#container" class="active" id="btnPerfil">Perfil</a>
+                <a href="#operaciones">Operaciones</a>
+                <button class="btnLogin-popup" id="closeSection">Cerrar Sección</button>
+            </nav>
+          </div>
+          
+          <div class="bx" id="menu-icon">
+            <ion-icon name="menu"></ion-icon>
+          </div>
+        
+    </header>
+
+    <section class="main-container" id="container">
+
+        <div class="perfil">
+
+            <div class="perfil-foto">
+                <img src="./img/foto1.png" alt="foto-perfil" width="300" height="300">
+            </div>
+
+            <div class="perfil-data">
+
+                <div id="loader" class="loader"></div>
+                <div class="boxPerfil none">
+                    <h2>¡Hola <span class="nombreCompleto"></span>!</h2>
+                    <h3 class="frase">Espero que tengas un excelente día.</h3>
+                    <p class="Rol"></p>
+                    <p class="departamento">Departamento de Consultas Médicas</p>
+                    <p class="email">Correo electrónico: <span class="email-p"></span></p>
+                    <p class="fecha">Fecha: <span class="fechaP" id="fechaP"> </span></p>
+                    <p class="hora">Hora: <span class="horaP" id="horaP"></span></p>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="operaciones" id="operaciones">
+
+        <div class="operaciones-titulo">
+
+            <h2>Operaciones</h2>
+
+        </div>
+
+        <div class="operaciones-divisiones">
+            
+            <div class="operaciones-box">
+                <div class="contenido">
+
+                    <div class="icon">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                    </div>
+
+                    <div class="contenido-box">
+                        <h3>Registrar</h3>
+                        <h4>Nuevo registro de paciente</h4>
+                    </div>
+                    
+                </div>
+
+                <div class="button">
+                    <button class="button-box" id="registroPaciente">Ingresar</button>
+                </div>
+            </div>
+              
+            <div class="operaciones-box">
+                <div class="contenido">
+
+                    <div class="icon">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </div>
+
+                    <div class="contenido-box">
+                        <h3>Busqueda</h3>
+                        <h4>Consultas y búsqueda de pacientes</h4>
+                    </div>
+                    
+                </div>
+
+                <div class="button">
+                    <button class="button-box" id="btnBusquedaSecretario">Ingresar</button>
+                </div>
+            </div>
+              
+            <div class="operaciones-box">
+
+                <div class="contenido">
+
+                    <div class="icon">
+                        <ion-icon name="trending-up-outline"></ion-icon>
+                    </div>
+
+                    <div class="contenido-box">
+                        <h3>Pagos</h3>
+                        <h4>Contabilidad de los pagos realizados</h4>
+                    </div>
+                    
+                </div>
+
+                <div class="button">
+                    <button class="button-box" id="pagosSecretario">Ingresar</button>
+                </div>
+            </div>
+
+        </div>
+            
+        </section>
+
+    
+
+    <script type="module" src="./src/config/configFetchAPI.js"></script>
+    <script type="module" src="./src/index.js"></script>
+    <script type="module" src="./src/firebase/fireauth.js"></script>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

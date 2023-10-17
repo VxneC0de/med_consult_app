@@ -1,0 +1,17 @@
+.error {
+    color: #d4153c;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 415px){
+    .error {
+        color: #d4153c;
+        font-weight: 600;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+}

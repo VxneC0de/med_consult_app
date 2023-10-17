@@ -1,0 +1,102 @@
+.paciente-contentTitle{
+    width: 95%;
+    max-width: 95%;
+    height: 100%;
+    background-color: #ffffff;
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 3px solid var(--oscuro);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paciente-contentTitle ul{
+    margin-right: 40px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+.paciente-contentTitle .listPacienteTitle {
+    width: 95%;
+    max-width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border: 3px solid var(--green1);
+    border-radius: 5px;
+    box-sizing: border-box; /* Agregamos esta propiedad */
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+.paciente-contentTitle input{
+    accent-color: var(--black);
+    cursor: not-allowed;
+}
+
+.paciente-contentTitle p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 10px;
+    font-weight: 700;
+    text-align: center;
+    width: 150px;
+}
+
+.icon-boxTitle{
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paciente-contentTitle .icon {
+    font-size: 22px; /* Ajusta el tamaño de los iconos según tu preferencia */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    visibility: hidden;
+}
+
+.paciente-contentTitle input{
+    accent-color: var(--black);
+    cursor: not-allowed;
+    display: none;
+}
+
+.paciente-contentTitle .input[type="checkbox"] {
+    transform: scale(1.5);
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .paciente-contentTitle .listPacienteTitle {
+        font-size: 15px;
+    }
+
+    .paciente-contentTitle .icon {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 990px){
+    .paciente-contentTitle{
+        display: none;
+    }
+}

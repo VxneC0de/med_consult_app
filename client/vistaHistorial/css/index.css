@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "./header.css";
+@import "./main.css";
+@import "./loader.css";
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #AFD3E2;
+    --bluedark: #0A4D68;
+    --oscuro: #05152e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(to bottom, #156a8b, #93baca); */
+
+    background: url(../img/fondoMedicine2.jpg) fixed no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+}

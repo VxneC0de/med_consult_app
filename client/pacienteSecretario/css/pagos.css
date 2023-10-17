@@ -1,0 +1,231 @@
+.main-pagos{
+    position: relative;
+    width: 70%;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.pagos-box{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formPago-h2{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+    font-size: 30px;
+    color: var(--oscuro);
+    text-transform: uppercase;
+}
+
+.formPago{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 100%;
+    height: 100%;
+    gap: 20px;
+
+    padding: 40px;
+}
+
+/*//////SELECTOR DE PAGO//////*/
+
+.main-box-1{
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.inputPago-1{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelPago{
+    color: var(--oscuro);
+    font-size: 1em;
+    counter-reset: var(--oscuro);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.titlePago1{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: var(--oscuro);
+}
+
+.selectPago{
+    width: 250px;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid var(--oscuro);
+    outline: none;
+    border-radius: 5px;
+    padding: .7em;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 14.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*//////PAGOS//////*/
+
+.main-box-2{
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.menuPago-box{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlePago2{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 22px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.menuPago-box .iconPago{
+    font-size: 22px; /* Ajusta el tamaño de los iconos según tu preferencia */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--oscuro);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.boxPago-title1{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--oscuro);
+}
+
+.boxPago-title1 span{
+    color: red;
+}
+
+.data-box{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inputPago{
+    width: 50%;
+    border: 1px solid var(--oscuro);
+    outline: none;
+    border-radius: 5px;
+    padding: .7em;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.boxPago-title2{
+    color: #000000d5;
+    font-size: 1em;
+    font-weight: 600;
+    pointer-events: none;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1190px){
+    
+    .main-pagos{
+        width: 90%;
+    }
+}
+
+@media (max-width: 790px){
+    .boxPago-title1{
+        color: var(--white);
+    }
+    
+    .boxPago-title2{
+    text-align: center;
+    }
+}
+
+@media (max-width: 720px){
+    .boxPago-title1{
+        color: var(--white);
+    }
+    
+    .boxPago-title2{
+    text-align: center;
+    }
+
+    .labelPago{
+        color: var(--white);
+        text-align: center;
+    }
+
+    .titlePago1{
+        color: var(--white);
+    }
+}

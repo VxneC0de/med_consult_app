@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    <title>Cobro</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h2 class="logo">Med<span>Consult</span></h2>
+        </div>
+
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="#inicio" class="active" id="btnPerfil">Inicio</a>
+                <a href="#pagos" id="btnBusqueda">Busqueda</a>
+                <a href="#pagos" id="btnPagos">Pagos</a>
+                <button class="btnLogin-popup" id="btnClose">Cerrar Sección</button>
+            </nav>
+        </div>
+          
+        <div class="bx" id="menu-icon">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+
+    </header>
+
+    <section class="main-container" id="pagos">
+
+        <h2 class="form-h2">Pago de la Consulta</h2>
+
+        <div class="pagos-box">
+
+            <form class="formPago" action="#">
+
+                <div class="main-box-1">
+
+                    <div class="inputPago-1">
+                        <label class="labelPago" for="">Seleccionar método de pago</label>
+                        <select class="selectPago" id="selectPago">
+                            <option value="ninguno" id="nada">Seleccionar</option>
+                            <option value="efectivo" id="efectivo">Efectivo</option>
+                            <option value="pagoMovil" id="pagoMovil">Pago móvil</option>
+                        </select>
+                    </div>
+
+                    <div class="inputPago-1">
+                        
+                        <p class="titlePago1" id="fechaActual"></p>
+                    </div>
+                    
+                </div>
+
+                <div class="main-box-2 close" id="mainEfectivo">
+
+                    <div class="menuPago-box">
+                        <h3 class="titlePago2">Efectivo</h3>
+
+                        <span class="iconPago icon-delete" id="deleteUno"><ion-icon name="trash-outline"></ion-icon></span>
+                    </div>
+
+                    <div class="data-box">
+
+                        <div class="inputPago-1">
+                            <h4 class="boxPago-title1">Monto <span>*</span></h4>
+                            <input class="inputPago" type="text" id="pagosDataEfectivo" maxlength="5" required>
+                            <p class="boxPago-title2">El monto en dolares. No debe de pasar de 200</p>
+                            <p class="boxPago-title2">Si contiene decimales separelo por un punto (.)</p>
+                            <div class="error"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="main-box-2 close" id="mainBolivares">
+
+                    <div class="menuPago-box">
+                        <h3 class="titlePago2">Pago móvil</h3>
+
+                        <span class="iconPago icon-delete" id="deleteDos"><ion-icon name="trash-outline"></ion-icon></span>
+                    </div>
+
+                    <div class="data-box">
+
+                        <div class="inputPago-1">
+                            <h4 class="boxPago-title1">Número de referencia <span>*</span></h4>
+                            <input class="inputPago" type="text" id="pagosDataPM1" maxlength="4" required>
+                            <p class="boxPago-title2">Últimos 4 digitos</p>
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="inputPago-1">
+                            <h4 class="boxPago-title1">Monto <span>*</span></h4>
+                            <input class="inputPago" type="text" id="pagosDataPM2" maxlength="20" required>
+                            <p class="boxPago-title2">El monto en dolares. No debe de pasar de 200</p>
+                            <p class="boxPago-title2">Si contiene decimales separelo por un punto (.)</p>
+                            <div class="error"></div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </form>
+
+        </div>
+
+
+    </section>
+
+    <div class="botones">
+
+        <button class="btn" id="btnFinalizar" type="submit">Cancelar</button>
+        <button class="btn" id="btnGuardar" type="submit">Confirmar</button>
+
+    </div>
+
+
+
+
+
+    <script type="module" src="./src/index.js"></script>
+
+    <script src="./src/API/api.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="module" src="./src/js/configFetchAPI.js"></script>
+    <script type="module" src="./src/js/validacionesPatch.js"></script>
+    <script type="module" src="./src/js/cobroPatch.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+</body>
+</html>

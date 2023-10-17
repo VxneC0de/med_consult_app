@@ -1,0 +1,315 @@
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form span{
+    color: red;
+}
+
+.box-title{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    color: var(--oscuro);
+}
+
+.box-seubtitle{
+    text-align: center;
+    color: var(--oscuro);
+    font-weight: 600;
+    margin-top: 0;
+}
+
+/*////////////TEXTAREA//////////////*/
+
+.textArea{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textArea .area{
+    width: 100%;
+    height: 700px;
+    border: 2px solid var(--oscuro);
+    outline: none;
+    border-radius: 5px;
+    padding: .7em;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-top: 5px;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 17px;
+    text-justify: inter-word;
+    resize: none;
+}
+
+/*////////////FECHAS//////////////*/
+
+.fechas{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.box-7{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-7 .label{
+    font-weight: 600;
+    color: var(--color);
+}
+
+.box-7 .input{
+    cursor: pointer;
+    border: 2px solid var(--oscuro);
+    outline: none;
+    border-radius: 5px;
+    padding: .7em;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-top: 0px;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.selector{
+    cursor: pointer;
+    margin-top: 6px;
+    text-align: center;
+    border: 1px solid var(--oscuro);
+    outline: none;
+    border-radius: 5px;
+    padding: .7em;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*////////////BOTONES//////////////*/
+
+.botones{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.btn {
+    --color: #05152e;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+    font-size: 17px;
+    border: 3px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+.btn::before, .btn::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+   
+.btn::before {
+    top: -1em;
+    left: -1em;
+}
+   
+.btn::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+   
+.btn:hover::before, .btn:hover::after {
+    height: 410px;
+    width: 410px;
+}
+   
+.btn:hover {
+    color: var(--white);
+}
+   
+.btn:active {
+    filter: brightness(.8);
+}
+
+@media (max-width: 770px){
+
+    .box-title{
+        color: var(--white);
+    }
+    
+    .box-seubtitle{
+        color: var(--oscuro);
+    }
+
+    .box-7 .label{
+        font-weight: 600;
+        color: var(--white);
+    }
+}
+
+@media (max-width: 603px){
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .btn {
+        --color: #ffffff;
+        padding: 0.8em 1.7em;
+        background-color: transparent;
+        border-radius: .3em;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: .5s;
+        font-weight: 600;
+        font-size: 17px;
+        border: 3px solid;
+        font-family: inherit;
+        text-transform: uppercase;
+        color: var(--color);
+        z-index: 1;
+       }
+       
+    .btn::before, .btn::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: var(--color);
+        transition: 1s ease;
+    }
+       
+    .btn:hover {
+        color: var(--oscuro);
+    }
+
+}
+
+@media (max-width: 500px){
+    .textArea .area{
+        width: 100%;
+
+        border: 1px solid var(--oscuro);
+        outline: none;
+        border-radius: 5px;
+        padding: .7em;
+        background-color: rgb(255, 255, 255);
+        transition: 300ms ease-in-out;
+        margin-top: 5px;
+        color: var(--black);
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+        text-justify: inter-word;
+        resize: none;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .btn {
+        --color: #ffffff;
+        padding: 0.8em 1.7em;
+        background-color: transparent;
+        border-radius: .3em;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: .5s;
+        font-weight: 600;
+        font-size: 17px;
+        border: 3px solid;
+        font-family: inherit;
+        text-transform: uppercase;
+        color: var(--color);
+        z-index: 1;
+       }
+       
+    .btn::before, .btn::after {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: var(--color);
+        transition: 1s ease;
+    }
+       
+    .btn:hover {
+        color: var(--oscuro);
+    }
+
+}

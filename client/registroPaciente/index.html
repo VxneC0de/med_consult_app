@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h2 class="logo">Med<span>Consult</span></h2>
+        </div>
+
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="#" class="active" id="btnPerfil">Inicio</a>
+                <a href="#" id="btnBusqueda">Busqueda</a>
+                <a href="#" id="btnPagos">Pagos</a>
+                <button class="btnLogin-popup" id="btnClose">Cerrar Sección</button>
+            </nav>
+        </div>
+          
+        <div class="bx" id="menu-icon">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+
+    </header>
+
+    <section class="main-container" id="registro">
+
+        <div class="form-box">
+            <h2 class="form-h2">Registro de Paciente</h2>
+
+            <form class="form" action="#">
+
+                <h4 class="form-h4">Datos del Paciente</h4>
+
+                <div class="bordes">
+
+                    <div class="input-box">
+    
+                        <p class="box-title2">Cédula de identidad <span>*</span></p>
+    
+                        <div class="box-column">
+
+                            <div class="box-column-inter">
+                                <select class="select-column columnOne" id="nacionalidad">
+                                    <option value="venezolano">V</option>
+                                    <option value="extranjero">E</option>
+                                    <option value="pasaporte">P</option>
+                                </select>
+                                <input class="input" type="text" id="cedula" maxlength="15" required>
+                                <span class="btnSearch" id="btnSearch"><ion-icon name="search"></ion-icon></span>
+                                <div class="error"></div>
+                            </div>
+                            
+                        
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="bordes">
+
+                    <div class="checkbox">
+
+                        <p class="box-title1">Seleccione género <span>*</span></p>
+    
+                        <div class="checkbox-box">
+
+                            <div>
+                                <input class="radio" type="radio" style="flex-grow: 1;" id="femenino" name="drone1" value="femenino" checked>
+                                <label for="femenino">Femenino</label>
+                            </div>
+                            
+                            <div>
+                                <input class="radio" type="radio" style="flex-grow: 1;" id="masculino" name="drone1" value="masculino">
+                                <label for="masculino">Masculino</label>
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+    
+                    <div class="checkbox">
+    
+                        <p class="box-title1">Grupo de edad <span>*</span></p>
+    
+                        <div class="checkbox-box">
+
+                              <div>
+                                <input class="radio" type="radio" style="flex-grow: 1;" id="adulto" name="drone2" value="adulto" checked>
+                                <label for="adulto">Adulto/a</label>
+                            </div>
+                            
+                            <div>
+                                <input class="radio" type="radio" style="flex-grow: 1;" id="adolescente" name="drone2" value="adolescente">
+                                <label for="adolescente">Adolescente</label>
+                            </div>
+
+                            <div>
+                                <input class="radio" type="radio" style="flex-grow: 1;" id="niño" name="drone2" value="niño">
+                                <label for="niño">Niño/a</label>
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="bordes">
+
+                    <div class="input-box">
+
+                        <p class="box-title2">Nombres y Apellidos del Paciente <span>*</span></p>
+    
+                        <div class="section-row">
+    
+                            <div class="box-row">
+                                <label class="label" for="name">Nombre</label>
+                                <input class="input" type="text" id="nombre" maxlength="15" required>
+                                <div class="error"></div>
+                            </div>
+                            
+                            <div class="box-row">
+                                <label class="label" for="second name">Segundo Nombre</label>
+                                <input class="input" type="text" id="nombre2" maxlength="15" required>
+                                <div class="error"></div>
+                            </div>
+                            
+                            <div class="box-row">
+                                <label class="label" for="surname">Apellidos</label>
+                                <input class="input" type="text" id="apellidos" maxlength="25" required>
+                                <div class="error"></div>
+                            </div>
+    
+                        </div>
+
+                        
+                        
+                    </div>
+    
+                    <div class="input-box input-oculto close">
+    
+                        <p class="box-title2">Nombre del Acompañante <span>*</span></p>
+    
+                        <div class="section-row">
+    
+                            <div class="box-row">
+                                <label class="label" for="nombreAcompañante">Nombre</label>
+                                <input class="input" type="text" id="nombreAcompañante" maxlength="15" required>
+                                <div class="error"></div>
+                            </div>
+                            
+                            <div class="box-row">
+                                <label class="label" for="apellidoAcompañante">Apellido</label>
+                                <input class="input" type="text" id="apellidoAcompañante" maxlength="15" required>
+                                <div class="error"></div>
+                            </div>
+
+                            <div class="box-row">
+                                <label class="label" for="parentezco">Parentezco</label>
+                                <select class="select-row" id="parentezco">
+                                    <option value="madre">Madre</option>
+                                    <option value="padre">Padre</option>
+                                    <option value="tia">Tia</option>
+                                    <option value="tio">Tio</option>
+                                    <option value="hermana">Hermana</option>
+                                    <option value="hermano">Hermano</option>
+                                    <option value="abuela">Abuela</option>
+                                    <option value="abuelo">Abuelo</option>
+                                </select>
+                            </div>
+    
+                        </div>
+
+                    </div>
+    
+                    <div class="input-box">
+    
+                        <p class="box-title2">Correo electronico <span>*</span></p>
+    
+                        <div class="box-column-2">
+    
+                            <input class="input-2" type="email" id="email" required>
+                            <div class="error"></div>
+    
+                        </div>
+                    
+                    </div>
+    
+    
+    
+                    <div class="input-box">
+    
+                        <p class="box-title2">Número de contacto <span>*</span></p>
+                            
+                        <div class="box-column">
+
+                            <div class="box-column-inter">
+
+                                <select class="select-column" id="areaPhone">
+                                    <option value="0416">0416</option>
+                                    <option value="0426">0426</option>
+                                    <option value="0414">0414</option>
+                                    <option value="0424">0424</option>
+                                    <option value="0412">0412</option>
+                                </select>
+                                <input class="input-3" type="text" id="numberPhone" maxlength="7" required>
+                                <div class="error"></div>
+                                
+                            </div>
+                            
+                        </div>
+
+                    </div>
+    
+                    <div class="input-box">
+    
+                        <p class="box-title2">Dirección <span>*</span></p>
+    
+                        <div class="section-column">
+    
+                            <div class="box-column-2">
+                                <label class="label" for="direccion1">Dirección de la calle</label>
+                                <input class="input-4" type="text" id="direccion1" maxlength="20" required>
+                                <div class="error"></div>
+                            </div>
+                            
+                            <div class="box-column-2">
+                                <label class="label" for="direccion2">Dirección de la calle Línea 2</label>
+                                <input class="input-4" type="text" id="direccion2" maxlength="20">
+                                <div class="error"></div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="section-row-margin">
+    
+                            <div class="box-row-margin">
+                                <label class="label" for="ciudad">Ciudad</label>
+                                <input class="input" type="text" id="ciudad" maxlength="10" required>
+                                <div class="error"></div>
+                            </div>
+                            <div class="box-row-margin">
+                                <label class="label" for="estado">Estado / Provincia</label>
+                                <input class="input" type="text" id="estado" maxlength="10">
+                                <div class="error"></div>
+                            </div>
+                            <div class="box-row-margin">
+                                <label class="label" for="postal">Código Postal</label>
+                                <input class="input" type="text" id="postal" maxlength="4">
+                                <div class="error"></div>
+                            </div>
+    
+                        </div>
+            
+                    </div>
+
+                </div>
+
+                <div class="bordes">
+
+                    <div class="selector">
+
+                        <p class="box-title2">Seleccione Si es Primera Vez o Sucesiva <span>*</span></p>
+                        
+                        <select class="select" id="primeraConsulta">
+                            <option value="primeraVez">Primera vez</option>
+                            <option value="sucesiva">Sucesiva</option>
+                        </select>
+    
+                    </div>
+    
+                    <div class="selector">
+    
+                        <p class="box-title2">Tipo de consulta <span>*</span></p>
+                        
+                        <select class="select" id="tipoConsulta">
+                            <option value="leturaExamen">Lectura de exámenes</option>
+                            <option value="control">Control</option>
+                            <option value="eventual">Eventual</option>
+                            <option value="primeraVez">Primera vez</option>
+                        </select>
+    
+                    </div>
+    
+                    <div class="textArea">
+    
+                        <p class="box-title2">Describa sus síntomas, brevemente:</p>
+    
+                        <textarea class="area" name="" id="textArea" cols="30" rows="10" placeholder="Síntomas..."></textarea>
+    
+                    </div>
+
+                </div>
+
+                <div class="bordes">
+
+                    <div class="fechas">
+
+                        <p class="box-title3">Fecha de la Consulta <span>*</span></p>
+    
+                        <div class="section-box-7">
+    
+                            <div class="box-7">
+                                <label class="label" for="fechaCita">Fecha:</label>
+                                <input class="input" type="date" id="fechaCita" name="fechaCita" required>
+                                <div class="error"></div>
+                            </div>
+    
+                            <div class="box-7">
+                                <label class="label" for="horaCita">Hora:</label>
+                                <input class="input" type="time" id="horaCita" name="horaCita" required>
+                                <div class="error"></div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+
+                </div>
+                
+
+            </form>
+    
+        </div>
+
+    </section>
+
+    <div class="botones">
+
+        <button class="btn" id="btnFinalizar" type="submit">Finalizar</button>
+        <button class="btn" id="btnGuardar" type="submit">Guardar</button>
+
+    </div>
+
+
+    <script type="module" src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/registroPaciente.js"></script>
+    
+    <!-- <script type="module" src="./src/firebase/firestore.js"></script> -->
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./src/js/validacionRegistro.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>

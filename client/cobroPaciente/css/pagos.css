@@ -1,0 +1,268 @@
+.formPago{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    max-width: 100%;
+    height: 100%;
+    gap: 20px;
+
+    padding: 40px;
+}
+
+/*//////SELECTOR DE PAGO//////*/
+
+.main-box-1{
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.inputPago-1{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelPago{
+    color: var(--oscuro);
+    font-size: 1em;
+    counter-reset: var(--oscuro);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.titlePago1{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: var(--oscuro);
+}
+
+.selectPago{
+    width: 250px;
+    margin-top: 15px;
+    text-align: center;
+    border: 1px solid var(--oscuro);
+    outline: none;
+    border-radius: 5px;
+    padding: .7em;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 14.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*//////PAGOS//////*/
+
+.main-box-2{
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.menuPago-box{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlePago2{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-size: 22px;
+    color: var(--white);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.menuPago-box .iconPago{
+    font-size: 22px; /* Ajusta el tamaño de los iconos según tu preferencia */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--oscuro);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.boxPago-title1{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--oscuro);
+}
+
+.boxPago-title1 span{
+    color: red;
+}
+
+.data-box{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inputPago{
+    width: 50%;
+    border: 1px solid var(--oscuro);
+    outline: none;
+    border-radius: 5px;
+    padding: .7em;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    color: var(--black);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.boxPago-title2{
+    color: #000000d5;
+    font-size: 1em;
+    font-weight: 600;
+    pointer-events: none;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/*//////BOTONES//////*/
+
+.botones{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    --color: #05152e;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+    font-size: 17px;
+    border: 3px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+.btn::before, .btn::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+   
+.btn::before {
+    top: -1em;
+    left: -1em;
+}
+   
+.btn::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+   
+.btn:hover::before, .btn:hover::after {
+    height: 410px;
+    width: 410px;
+}
+   
+.btn:hover {
+    color: var(--white);
+}
+   
+.btn:active {
+    filter: brightness(.8);
+}
+
+.close{
+    display: none;
+}
+
+@media (max-width: 1190px){
+    
+    .main-pagos{
+        width: 90%;
+    }
+}
+
+@media (max-width: 790px){
+    .boxPago-title1{
+        color: var(--white);
+    }
+    
+    .boxPago-title2{
+    text-align: center;
+    }
+}
+
+@media (max-width: 720px){
+    .boxPago-title1{
+        color: var(--white);
+    }
+    
+    .boxPago-title2{
+    text-align: center;
+    }
+
+    .labelPago{
+        color: var(--white);
+        text-align: center;
+    }
+
+    .titlePago1{
+        color: var(--white);
+    }
+}
+
+@media (max-width: 580px){
+    .botones{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,33 @@
+.main-container .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.main-container .form-box.register{
+    position: absolute;
+    transform: translateX(400px);
+    transition: none;
+    box-sizing: border-box;
+}
+
+.main-container.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+
+/*OJITO PARA EL JS*/
+.main-container.active{
+    height: 560px;
+}
+
+.main-container.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+
+.main-container.active-popup{
+    transform: scale(1);
+}

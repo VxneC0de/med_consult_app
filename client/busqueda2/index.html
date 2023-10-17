@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+  <title>Busqueda</title>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+        <h2 class="logo">Med<span>Consult</span></h2>
+    </div>
+    
+    <div class="nav-container">
+      
+      <nav class="navigation">
+        <a href="#" class="active" id="btnPerfil">Inicio</a>
+        <a href="#" id="btnRegistro">Registro</a>
+        <a href="#" id="btnPagos">Pagos</a>
+        <button class="btnLogin-popup" id="closeSection">Cerrar Sección</button>
+      </nav>
+    </div>
+    
+    <div class="bx" id="menu-icon">
+      <ion-icon name="menu"></ion-icon>
+    </div>
+
+  </header>
+
+  <section class="main-container" id="busqueda">
+
+    <h2 class="main-title">Busqueda</h2>
+
+    <div class="form-busqueda">
+
+      <form class="form" action="#">
+
+        <div class="div-busqueda">
+          <label class="label" for="">Introduzca la C.I del paciente</label>
+          <input class="input" type="text" placeholder="Introducir C.I" id="ciInput" maxlength="15">
+          <button class="btnSearch" id="btnSearch"><ion-icon name="search"></ion-icon></button>
+          <select id="selectConsulta" class="select1">
+            <option id="actuales" value="actuales">Consultas actuales</option>
+            <option id="anteriores" value="anteriores">Consultas anteriores</option>
+          </select>
+        </div>
+
+      </form>
+
+    </div>
+
+
+    <div class="paciente" id="paciente">
+
+      <div class="paciente-contentTitle">
+        <ul class="createNameTitle">
+            <li class="listPacienteTitle">
+              <label>
+                <input class="input" type="checkbox" style="flex-grow: 1;">
+              </label>
+                <p class="namePacienteTitle false">
+                  Nombre y Apellido:
+                </p>
+                <p class="ciPacienteTitle false">
+                    C.I:
+                </p>
+                <p class="ciPacienteTitle false">
+                    Hora:
+                </p>
+                <p class="ciPacienteTitle false">
+                    Fecha:
+                </p>
+                <div class="icon-boxTitle">
+                  <span class="icon icon-paper"><ion-icon name="document"></ion-icon></span>
+                  <span class="icon icon-edit"><ion-icon name="create"></ion-icon></span>
+                  <span class="icon icon-delete"><ion-icon name="eye-off"></ion-icon></span>
+              </div>
+            </li>
+        </ul>
+      </div>
+
+      <div id="loader" class="loader"></div>
+
+      <div class="paciente-content2"></div>
+
+    </div>
+
+
+    <div class="pacienteAnteriores close" id="pacienteAnteriores">
+
+      <div class="paciente-contentTitle">
+        <ul class="createNameTitle" id="createName">
+          <li class="listPacienteTitle">
+            <p class="namePacienteTitle false">
+              Nombre y Apellido:
+            </p>
+            <p class="ciPacienteTitle false">
+              C.I:
+            </p>
+            <div class="icon-boxTitle">
+              <span class="icon icon-edit"><ion-icon name="create"></ion-icon></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div id="loader2" class="loader"></div>
+      
+      <div class="pacienteAnteriores-content2" id="contenidoPacienteAnteriores"></div>
+
+    </div>
+
+  </section>
+
+
+  <script src="./src/index.js"></script>
+
+  <script type="module" src="./src/js/listPaciente.js"></script>
+  <script type="module" src="./src/js/busquedaValidaciones.js"></script>
+  <script type="module" src="./src/js/firebase.auth.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+</html>

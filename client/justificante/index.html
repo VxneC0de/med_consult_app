@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <title>Justificante</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h2 class="logo">Med<span>Consult</span></h2>
+        </div>
+
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="#" id="btnPerfil">Inicio</a>
+                <button class="btnLogin-popup" id="closeSection">Cerrar Sección</button>
+            </nav>
+        </div>
+          
+        <div class="bx" id="menu-icon">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+
+    </header>
+
+    <section class="main-container" id="justificante">
+
+        <div id="justificante" class="justificante">
+
+            <div class="encabezado">
+                <p>MedConsult - Consultas Generales</p>
+                <p>Calle Principal, Edificio MedConsult, Piso 3, Consultorio 301</p>
+                <p>Urbanización Las Acacias, Caracas, Venezuela. Zona Postal: 1050</p>
+                <p>RIF: J-12345678-9</p>
+                <p>Teléfonos: 0212-1234567 / 0412-1234567</p>
+                <p>Correo electrónico: info@medconsult.com</p>
+              </div>
+
+            <div class="titulo">
+              <h1>Justificante Médico</h1>
+            </div>
+
+            <div class="contenido">
+
+                    <form class="form">
+
+                        <div class="campo-1">
+                            <label class="label" for="nombre">Se hace constar que el paciente</label>
+                            <input class="input-1" type="text" id="nombreCompleto" maxlength="30" required>
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="campo-2">
+                            <div class="campo2-1">
+                                <label class="label" for="apellido">Titular de la C.I</label>
+
+                                <div class="box-cedula">
+                                    <select class="select" id="nacionalidad">
+                                        <option value="venezolano">V</option>
+                                        <option value="extranjero">E</option>
+                                        <option value="pasaporte">P</option>
+                                    </select>
+                                    <input class="input-2" type="text" id="cedula" maxlength="15" required>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="campo2-2">
+                                <p class="parrafo">Acudió el día de hoy a realizarse una evaluación médica.</p>
+                            </div>
+
+                            <div class="error"></div>
+                            
+                        </div>
+      
+                        <div class="campo-3">
+                            <label class="label" for="fecha">En la fecha estipulada</label>
+                            <input class="input-3" type="date" name="fecha" id="fecha" required>
+                            <div class="error"></div>
+                        </div>
+      
+                        <div class="campo-4">
+                            <label class="label" for="motivo">Motivo de la consulta:</label>
+                            <textarea class="area" name="motivo" id="motivo" rows="5" required></textarea>
+                            <div class="error"></div>
+                        </div>
+      
+                    </form>
+      
+            </div>
+            
+            <div class="atender">
+                <p class="parrafo">Para mayor información se pueden comunicar con nosotros que gustosamente le atenderemos.</p>
+            </div>
+
+            <div class="firma">
+                <label class="label" for="tratamiento">Atentamente</label>
+                <input class="input-4" type="text" id="firma" readonly required>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="botones">
+        
+        <div class="boton">
+
+            <button class="btn" type="submit" id="btnAtras">Atras</button>
+            <button class="btn" type="submit" id="crearPDF">Crear PDF</button>
+            
+        </div>
+        
+    </section>
+
+
+
+    <script type="module" src="./src/index.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
