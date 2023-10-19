@@ -141,7 +141,7 @@ const btnGuardar = document.getElementById('btnGuardar');
 
 const savePaciente = async (paciente) => {
   console.log(paciente);
-  const sendData = await fetch('http://localhost:3100/api/registro', {
+  const sendData = await fetch('https://med-consult-app.onrender.com/api/registro', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
@@ -156,7 +156,7 @@ const savePaciente = async (paciente) => {
 
 const saveHistoriales = async (cedula, datosHistorial) => {
   console.log(cedula, datosHistorial);
-  const sendData = await fetch('http://localhost:3100/api/vistaHistorial', {
+  const sendData = await fetch('https://med-consult-app.onrender.com/api/vistaHistorial', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
@@ -174,7 +174,7 @@ const saveHistoriales = async (cedula, datosHistorial) => {
 
 const validatePaciente = async () => {
   const queryCedula = cedula.value;
-  const dataList = await fetch(`http://localhost:3100/api/registro?cedula=${queryCedula}`, {
+  const dataList = await fetch(`https://med-consult-app.onrender.com/api/registro?cedula=${queryCedula}`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${token}`
@@ -187,7 +187,7 @@ const validatePaciente = async () => {
 
 const updatePaciente = async (pacienteId, pacienteData) => {
   console.log(pacienteId, pacienteData);
-  const sendData = await fetch(`http://localhost:3100/api/registro/${pacienteId}`, {
+  const sendData = await fetch(`https://med-consult-app.onrender.com/api/registro/${pacienteId}`, {
       method: 'PATCH',
       headers: {
           'Content-Type': 'application/json',

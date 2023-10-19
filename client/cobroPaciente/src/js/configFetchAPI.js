@@ -34,7 +34,7 @@ import {
   
 
 export const getPagos = async () => {
-    const dataList = await fetch(`http://localhost:3100/api/cobroPaciente/${window.location.pathname.split('/')[2]}`, {
+    const dataList = await fetch(`https://med-consult-app.onrender.com/api/cobroPaciente/${window.location.pathname.split('/')[2]}`, {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${token}`
@@ -50,7 +50,7 @@ export const getPagos = async () => {
   
 export const updatePagos = async (pagosId, pagosData) => {
     console.log(pagosId, pagosData);
-    const sendData = await fetch(`http://localhost:3100/api/cobroPaciente/${pagosId}`, {
+    const sendData = await fetch(`https://med-consult-app.onrender.com/api/cobroPaciente/${pagosId}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',

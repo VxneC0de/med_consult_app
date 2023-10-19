@@ -57,7 +57,7 @@ const loader = document.getElementById('loader');
 
 
 const printPagosList = async () => {
-    const dataList = await fetch(`http://localhost:3100/api/pagosSecretario`, {
+    const dataList = await fetch(`https://med-consult-app.onrender.com/api/pagosSecretario`, {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${token}`

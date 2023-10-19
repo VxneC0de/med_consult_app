@@ -44,7 +44,7 @@ console.log(loader);
 
 //LISTA ACTUALES
 const printPacienteList = async () => {
-    const dataList = await fetch(`http://localhost:3100/api/busqueda`, {
+    const dataList = await fetch(`https://med-consult-app.onrender.com/api/busqueda`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 //LISTA ANTERIORES
 const printPacienteAnterioresList = async () => {
-    const dataList = await fetch(`http://localhost:3100/api/busqueda`, {
+    const dataList = await fetch(`https://med-consult-app.onrender.com/api/busqueda`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -425,7 +425,7 @@ btnSearch.addEventListener('click', () => {
 //BOTONES O ICONOS
 
 const deletePaciente = async (id) => {
-  const deletedProduct = await fetch(`http://localhost:3100/api/busqueda/${id}`, {
+  const deletedProduct = await fetch(`https://med-consult-app.onrender.com/api/busqueda/${id}`, {
     method: 'DELETE',
     headers: {
           'Authorization': `Bearer ${token}`
@@ -438,7 +438,7 @@ const deletePaciente = async (id) => {
 
 const updatePaciente = async (pacienteId, pacienteData) => {
   console.log(pacienteId, pacienteData);
-  const sendData = await fetch(`http://localhost:3100/api/registro/${pacienteId}`, {
+  const sendData = await fetch(`https://med-consult-app.onrender.com/api/registro/${pacienteId}`, {
       method: 'PATCH',
       headers: {
           'Content-Type': 'application/json',
@@ -452,7 +452,7 @@ const updatePaciente = async (pacienteId, pacienteData) => {
 
 //OJITO
 const deleteHistorial = async (cedula) => {
-  const deletedProduct = await fetch(`http://localhost:3100/api/crearHistorial/${cedula}`, {
+  const deletedProduct = await fetch(`https://med-consult-app.onrender.com/api/crearHistorial/${cedula}`, {
     method: 'DELETE',
     headers: {
       'Authorization': `Bearer ${token}`

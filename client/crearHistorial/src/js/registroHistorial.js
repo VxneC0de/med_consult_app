@@ -88,13 +88,13 @@ const horaCita = document.getElementById("horaCita");
 
 const btnGuardar = document.getElementById("btnGuardar");
 
-const cedulaUrl = `http://localhost:3100/api/crearHistorial/${window.location.pathname.split('/')[2]}`;
+const cedulaUrl = `https://med-consult-app.onrender.com/api/crearHistorial/${window.location.pathname.split('/')[2]}`;
 const cedulaView = cedulaUrl.split('/')[5];
 
 console.log(cedulaView);
 
 const getHistorial = async (cedula) => {
-  const dataList = await fetch(`http://localhost:3100/api/crearHistorial/${cedula}`, {
+  const dataList = await fetch(`https://med-consult-app.onrender.com/api/crearHistorial/${cedula}`, {
     method: 'GET',
     headers: {
       'Authorization': `Bearer ${token}`
@@ -107,7 +107,7 @@ const getHistorial = async (cedula) => {
 
 const updateHistorial = async (cedula, datosHistorial) => {
   console.log(cedula, datosHistorial);
-  const sendData = await fetch(`http://localhost:3100/api/crearHistorial/${cedula}`, {
+  const sendData = await fetch(`https://med-consult-app.onrender.com/api/crearHistorial/${cedula}`, {
       method: 'PATCH',
       headers: {
           'Content-Type': 'application/json',

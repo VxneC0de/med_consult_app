@@ -40,7 +40,7 @@ let loader = document.querySelector('.loader');
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navigation");
 
-const userURL = `http://localhost:3100/api/users/${window.location.pathname.split('/')[2]}`;
+const userURL = `https://med-consult-app.onrender.com/api/users/${window.location.pathname.split('/')[2]}`;
 const userID = userURL.split('/')[5];
 
 

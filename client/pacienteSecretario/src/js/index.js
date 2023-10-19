@@ -4,7 +4,7 @@ console.log(window.location.pathname.split('/')[2]);
 console.log(productID);
 
 const getPacienteByID = async (id) => {
-  const pacienteData = await fetch(`http://localhost:3100/pacienteSecretario?id=${id}`, {
+  const pacienteData = await fetch(`https://med-consult-app.onrender.com/pacienteSecretario?id=${id}`, {
     method: 'GET',
   });
   const resultData = await pacienteData.json();

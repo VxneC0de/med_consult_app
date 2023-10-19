@@ -34,7 +34,7 @@ import {
     });
 
 export const getPaciente = async () => {
-    const dataList = await fetch(`http://localhost:3100/api/paciente/${window.location.pathname.split('/')[2]}`, {
+    const dataList = await fetch(`https://med-consult-app.onrender.com/api/paciente/${window.location.pathname.split('/')[2]}`, {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${token}`
@@ -50,7 +50,7 @@ export const getPaciente = async () => {
   
 export const updatePaciente = async (pacienteId, pacienteData) => {
     console.log(pacienteId, pacienteData);
-    const sendData = await fetch(`http://localhost:3100/api/paciente/${pacienteId}`, {
+    const sendData = await fetch(`https://med-consult-app.onrender.com/api/paciente/${pacienteId}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json',

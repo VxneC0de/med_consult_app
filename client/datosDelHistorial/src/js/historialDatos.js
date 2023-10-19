@@ -80,7 +80,7 @@ btnAtras.addEventListener('click', () => {
 
 export const getOnlyHistorialByID = async (cedula) => {
   try {
-      const dataList = await fetch(`http://localhost:3100/api/vistaHistorial/${cedula}`, {
+      const dataList = await fetch(`https://med-consult-app.onrender.com/api/vistaHistorial/${cedula}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`

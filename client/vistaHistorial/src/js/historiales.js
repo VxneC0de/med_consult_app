@@ -2,7 +2,7 @@ import {getOnlyHistorialByID, getHistorial} from './configFetchAPI.js';
 const agregar = document.getElementById('agregar');
 const boxHistoriales = document.getElementById('boxHistoriales')
 
-const cedulaUrl = `http://localhost:3100/api/crearHistorial/${window.location.pathname.split('/')[2]}`;
+const cedulaUrl = `https://med-consult-app.onrender.com/api/crearHistorial/${window.location.pathname.split('/')[2]}`;
 const cedulaView = cedulaUrl.split('/')[5];
 
 const loader = document.getElementById('loader');
