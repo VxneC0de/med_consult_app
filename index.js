@@ -41,6 +41,6 @@ app.use('/doctor/:uid', express.static(path.resolve(__dirname, 'client','medico'
 app.use('/secretario/:uid', express.static(path.resolve(__dirname, 'client','secretario')));
 app.use('/recuperarClave', express.static(path.resolve(__dirname, 'client','recuperarClave')));
 
-app.listen(3100, () => {
+app.listen(3200, () => {
   console.log('Server running!');
 })
