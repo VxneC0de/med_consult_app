@@ -5,7 +5,7 @@ import {
   console.log(app);
 
   const registerNewUser = async (userData) => {
-    const aNewUserData = await fetch('http://localhost:3100/api/register', {
+    const aNewUserData = await fetch('https://med-consult-app.onrender.com/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

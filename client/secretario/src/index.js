@@ -27,7 +27,7 @@ let email = document.querySelector('.email-p');
 let displayInfo = document.querySelector('.none');
 let loader = document.querySelector('.loader');
 
-const userURL = `http://localhost:3100/api/users/${window.location.pathname.split('/')[2]}`;
+const userURL = `https://med-consult-app.onrender.com/api/users/${window.location.pathname.split('/')[2]}`;
 const userID = userURL.split('/')[5];
 
 

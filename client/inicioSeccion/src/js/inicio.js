@@ -18,7 +18,7 @@ import {
   const auth = getAuth(app);
   
   const loginUser = async (token) => {
-    const userLoggedSuccess = await fetch('http://localhost:3100/api/login', {
+    const userLoggedSuccess = await fetch('https://med-consult-app.onrender.com/api/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
