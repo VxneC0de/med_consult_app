@@ -1,0 +1,21 @@
+@media screen and (max-width: 750px){
+
+    header{
+        background: var(--oscuro);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    }
+
+    #menu-icon{
+        color: var(--white);
+    }
+
+    .box-agregar{
+        background-color: var(--bluedark);
+    }
+
+    .box-historiales{
+        background-color: var(--bluedark);
+    }
+    
+
+}

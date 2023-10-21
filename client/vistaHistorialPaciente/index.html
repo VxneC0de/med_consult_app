@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <script src="./src/unpkg.com_scrollreveal@4.0.9_dist_scrollreveal.js"></script> -->
+    <title>Historial del Paciente</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <h2 class="logo">Med<span>Consult</span></h2>
+        </div>
+
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="#" class="active" id="btnPerfil">Inicio</a>
+                <a href="#" id="btnBusqueda">Busqueda</a>
+                <a href="#" id="btnPagos">Pagos</a>
+                <button class="btnLogin-popup" id="btnClose">Cerrar Sección</button>
+            </nav>
+        </div>
+          
+        <div class="bx" id="menu-icon">
+            <ion-icon name="menu"></ion-icon>
+        </div>
+
+    </header>
+    
+    <section class="main-container">
+
+        <div class="box">
+
+            <h2 class="title1">Historial Medico del Paciente</h2>
+
+            <div class="boxHistorialCompleto">
+
+                <div id="boxHistoriales" class="box-historiales">
+
+                    <div id="loader" class="loader">
+                    </div>
+
+                </div>
+    
+            </div>
+
+        </div>
+
+
+    </section>
+    
+
+
+    <script type="module" src="./src/index.js"></script>
+    <script type="module" src="./src/js/configFetchAPI.js"></script>
+    <script type="module" src="./src/js/historiales.js"></script>
+
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
