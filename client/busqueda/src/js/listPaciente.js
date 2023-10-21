@@ -329,6 +329,13 @@ btnSearch.addEventListener('click', () => {
         filteredOnlyPacientes = filteredPacientes.filter(paciente => paciente.paciente.cedula === ciInput);
       }
 
+      // if (ciInput.trim() !== '') {
+      //   filteredOnlyPacientes = filteredPacientes.filter(paciente => {
+      //     const pacientesNoCancelados = paciente.paciente.cancelado;
+      //     return paciente.paciente.cedula === ciInput && pacientesNoCancelados === false;
+      //   });
+      // }
+
       if (filteredPacientes.length === 0) {
         Swal.fire('Paciente no registrado');
         return;

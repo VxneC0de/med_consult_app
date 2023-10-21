@@ -109,3 +109,8 @@ function closeMenu() {
   menuIcon.innerHTML = '<ion-icon name="menu"></ion-icon>';
   navbar.classList.remove("active");
 }
+
+let navLinks2 = document.querySelectorAll(".navigation a");
+navLinks2.forEach(link => {
+  link.addEventListener("click", closeMenu);
+});

@@ -35,7 +35,7 @@ import {
 
 export const getOnlyHistorialByID = async (cedula) => {
     try {
-        const dataList = await fetch(`http://localhost:3200/api/vistaHistorial/${cedula}`, {
+        const dataList = await fetch(`https://med-consult-app.onrender.com/api/vistaHistorial/${cedula}`, {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -53,7 +53,7 @@ export const getOnlyHistorialByID = async (cedula) => {
 
 export const getHistorial= async () => {
     try {
-        const dataList = await fetch(`http://localhost:3200/api/datosDelHistorial/`, {
+        const dataList = await fetch(`https://med-consult-app.onrender.com/api/datosDelHistorial/`, {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`
