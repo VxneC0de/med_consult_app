@@ -5,6 +5,7 @@
 @import "./perfil.css";
 @import "./operaciones.css";
 @import "./loader.css";
+@import "./responsive.css";
 
 :root {
     --white: #ffffff;

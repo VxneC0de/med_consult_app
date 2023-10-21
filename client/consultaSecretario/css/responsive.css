@@ -1,0 +1,28 @@
+@media screen and (max-width: 750px){
+
+    header{
+        background: var(--oscuro);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    }
+
+    #menu-icon{
+        color: var(--white);
+    }
+
+    .main-container{
+        background: var(--bluedark);
+        border: 2px solid rgba(255, 255, 255, .5);
+        backdrop-filter: blur(20px);
+    }
+
+    .form-h2{
+        color: var(--white);
+    }
+    
+    .form-h4{
+        color: var(--white);
+        border-top: 2px solid var(--white);
+        border-bottom: 2px solid var(--white);
+    }
+
+}

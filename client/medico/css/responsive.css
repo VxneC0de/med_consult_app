@@ -1,0 +1,18 @@
+@media screen and (max-width: 750px){
+
+    header{
+        background: var(--oscuro);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    }
+
+    .perfil{
+        border: 2px solid rgba(255, 255, 255, 0.671);
+        backdrop-filter: blur(0px);
+        background-color: #0A4D68;
+    }
+
+    .operaciones-box{
+        backdrop-filter: blur(0px);
+        background-color: #0A4D68;
+    }
+}

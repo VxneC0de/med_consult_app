@@ -6,6 +6,7 @@
 @import "./register.css";
 @import "./C.I.css";
 @import "./error.css";
+@import "./responsive.css";
 
 :root {
     --white: #ffffff;

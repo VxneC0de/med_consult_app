@@ -13,6 +13,7 @@ const pacienteSecretario = require('../components/pacienteSecretario/router');
 
 const datosDelHistorial = require('../components/datosDelHistorial/router')
 const vistaHistorial = require('../components/vistaHistorial/router');
+const vistaHistorialPaciente = require('../components/vistaHistorialPaciente/router');
 const crearHistorial = require('../components/crearHistorial/router');
 const cobroPaciente = require('../components/cobroPaciente/router')
 

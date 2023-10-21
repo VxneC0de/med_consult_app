@@ -240,6 +240,10 @@
     .boxPago-title2{
     text-align: center;
     }
+
+    .inputPago{
+        width: 80%;
+    }
 }
 
 @media (max-width: 720px){
@@ -264,5 +268,16 @@
 @media (max-width: 580px){
     .botones{
         flex-direction: column;
+    }
+    .btn {
+        --color: --white;
+        color: var(--white);
+       }
+       
+}
+
+@media (max-width: 450px){
+    .main-container{
+        width: 90%;
     }
 }

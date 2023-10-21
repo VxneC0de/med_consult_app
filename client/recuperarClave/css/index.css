@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./main.css";
 @import "./remember.css";
+@import "./responsive.css";
 
 :root {
     --white: #ffffff;

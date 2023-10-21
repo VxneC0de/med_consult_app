@@ -228,7 +228,7 @@ contenidoPacienteAnteriores.addEventListener("click", e => {
 
   if (e.target.closest('.historial')) {
     idProduct = e.target.parentElement.parentElement.parentElement.children[1].children[0].id;
-    window.location.pathname = `/vistaHistorial/${idProduct}`;
+    window.location.pathname = `/vistaHistorialPaciente/${idProduct}`;
   }
 
   if (e.target.closest('.editar')) {

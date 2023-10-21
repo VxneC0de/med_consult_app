@@ -28,6 +28,7 @@ app.use('/paciente/:id', express.static(path.resolve(__dirname, 'client','pacien
 app.use('/consultaSecretario/:id', express.static(path.resolve(__dirname, 'client','consultaSecretario')));
 app.use('/pacienteSecretario/:id', express.static(path.resolve(__dirname, 'client','pacienteSecretario')));
 app.use('/vistaHistorial/:cedula', express.static(path.resolve(__dirname, 'client', 'vistaHistorial')));
+app.use('/vistaHistorialPaciente/:cedula', express.static(path.resolve(__dirname, 'client', 'vistaHistorialPaciente')));
 app.use('/crearHistorial/:cedula', express.static(path.resolve(__dirname, 'client', 'crearHistorial')));
 app.use('/datosDelHistorial/:cedula/:fecha', express.static(path.resolve(__dirname, 'client', 'datosDelHistorial')));
 

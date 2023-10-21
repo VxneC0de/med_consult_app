@@ -7,6 +7,7 @@
 @import "./lista2.css";
 @import "./loader.css";
 @import "./listTitle.css";
+@import "./responsive.css";
 
 :root {
     --white: #ffffff;

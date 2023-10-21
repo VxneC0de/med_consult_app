@@ -1,0 +1,29 @@
+@media screen and (max-width: 750px){
+
+    header{
+        background: var(--oscuro);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    }
+
+    #menu-icon{
+        color: var(--white);
+    }
+
+    .form-busqueda{
+        background: var(--bluedark);
+        backdrop-filter: blur(0px);
+    }
+
+    .select1{
+        border: 3px solid var(--oscuro);
+    }
+
+    .paciente{
+        background: var(--bluedark);
+    }
+
+    .pacienteAnteriores{
+        background: var(--bluedark);
+    }
+
+}
