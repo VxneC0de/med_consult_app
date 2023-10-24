@@ -12,6 +12,7 @@ import {
   const email = document.getElementById('email')
   
   const btnCambiar = document.getElementById('btnCambiar');
+  const btnCancelar = document.getElementById('btnCancelar')
   
   btnCambiar.addEventListener('click', (e) => {
     e.preventDefault();
@@ -37,6 +38,11 @@ import {
       // Mostrar mensaje de error o hacer cualquier otra acción apropiada
       console.log("Por favor, corrija los errores en las entradas");
     }
+  })
+
+  btnCancelar.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.pathname = '/';
   })
 
 //Scroll//
