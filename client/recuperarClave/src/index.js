@@ -1,27 +1,42 @@
-// import validate from "./inicioValidaciones.js"
+import validate from "./validacionRecuperarClave.js"
 import {
   getAuth,
   sendPasswordResetEmail,
   } from 'https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js'
-  // import {
-  //   app,
-  //   auth
-  // } from '/firebase/firebase.config.client.js';
+  import {
+    app
+  } from '/firebase/firebase.config.client.js';
   
+  const auth = getAuth(app);
 
   const email = document.getElementById('email')
-
+  
   const btnCambiar = document.getElementById('btnCambiar');
-
+  
   btnCambiar.addEventListener('click', (e) => {
-    e.preventDefault ();
-    
-    sendPasswordResetEmail(auth, email.value).then(() => {
-      alert('se envio el correo para reestablecer la contraseña')
-    }).catch((error) => {
-      console.log(error);
-    })
-    
+    e.preventDefault();
+    validate.validateInputs();
+  
+    let isValid = true; // variable para verificar si todas las entradas son válidas
+  
+    // Verificar si hay algún error en las entradas
+    const errorDisplays = document.querySelectorAll(".error");
+    errorDisplays.forEach(display => {
+      if (display.innerText !== '') {
+        isValid = false;
+      }
+    });
+  
+    if (isValid) {
+      sendPasswordResetEmail(auth, email.value).then(() => {
+        Swal.fire('Se envió el correo para reestablecer la contraseña');
+      }).catch((error) => {
+        console.log(error);
+      })
+    } else {
+      // Mostrar mensaje de error o hacer cualquier otra acción apropiada
+      console.log("Por favor, corrija los errores en las entradas");
+    }
   })
 
 //Scroll//
@@ -41,28 +56,4 @@ ScrollReveal().reveal('.login-h2, .input-box, .remember-forgot, .btn, .login-reg
 
 function direccionRegistro(){
     location.href="../pantalla-registro/index.html"
-  }
-  
-  function direccionBusqueda(){
-    location.href="../pantalla-busqueda/index.html"
-  }
-  
-  function direccionPagos(){
-    location.href="../pantalla-pagos/index.html"
-  }
-  
-  function direccionCerrar(){
-    location.href="../pantalla-inicio/index.html"
-  }
-
-  function direccionSecretario(){
-    location.href="../pantalla-secretario/index.html"
-  }
-
-  function direccionMedico(){
-    location.href="../pantalla-medico/index.html"
-  }
-
-  function direccionRecuperar(){
-    location.href="../pantalla-recuperar/index.html"
   }

@@ -4,6 +4,7 @@
 @import "./main.css";
 @import "./remember.css";
 @import "./responsive.css";
+@import "./error.css";
 
 :root {
     --white: #ffffff;

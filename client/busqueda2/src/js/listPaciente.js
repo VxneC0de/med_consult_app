@@ -306,10 +306,11 @@ btnSearch.addEventListener('click', () => {
         filteredOnlyPacientes = filteredPacientes.filter(paciente => paciente.paciente.cedula === ciInput);
       }
 
-      if (filteredPacientes.length === 0) {
+      if (!filteredOnlyPacientes || filteredOnlyPacientes.length === 0) {
+        filteredOnlyPacientes = filteredPacientes; // Si la búsqueda no arroja resultados, muestra todos los pacientes
         Swal.fire('Paciente no registrado');
-        return;
       }
+
 
       const listPaciente = filteredOnlyPacientes.map(paciente => {
 
@@ -368,17 +369,17 @@ btnSearch.addEventListener('click', () => {
     printPacienteAnterioresList()
     .then((pacientes) => {
       let filteredPacientesAnteriores = pacientes.message;
+      let filteredOnlyPacientesAnteriores;
 
       if (ciInput.trim() !== '') {
-        filteredPacientesAnteriores = filteredPacientesAnteriores.filter(paciente => paciente.paciente.cedula === ciInput);
+        filteredOnlyPacientesAnteriores = filteredPacientesAnteriores.filter(paciente => paciente.paciente.cedula === ciInput);
       }
 
-      if (filteredPacientesAnteriores.length === 0) {
-        Swal.fire('Paciente no registrado');
-        return;
+      if (!filteredOnlyPacientesAnteriores || filteredOnlyPacientesAnteriores.length === 0) {
+        filteredOnlyPacientesAnteriores = filteredPacientesAnteriores; // Si la búsqueda no arroja resultados, muestra todos los pacientes
       }
 
-      const listPacienteAnteriores = filteredPacientesAnteriores.map(paciente => {
+      const listPacienteAnteriores = filteredOnlyPacientesAnteriores.map(paciente => {
         // Código para generar el HTML de cada paciente anterior
         const iconos2 = () => `
           <span id="editar" class="icon icon-edit editar"><ion-icon name="create"></ion-icon></span>
