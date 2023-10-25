@@ -1,0 +1,42 @@
+.emailBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    max-width: 100%;
+    margin: 0;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.labelEmail{
+    color: var(--black);
+    font-size: 1em;
+    counter-reset: var(--black);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.inputEmail{
+    width: 50%;
+    height: 100%;
+    border: 2px solid var(--black);
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: 300ms ease-in-out;
+    margin-top: 5px;
+    color: var(--black);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+@media (max-width: 900px){
+    .inputEmail{
+        width: 80%;
+    }
+}

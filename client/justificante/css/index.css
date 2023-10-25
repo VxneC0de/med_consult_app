@@ -5,6 +5,7 @@
 @import "./justificante.css";
 @import "./error.css";
 @import "./responsive.css";
+@import "./email.css";
 
 :root {
     --white: #ffffff;
