@@ -1,3 +1,7 @@
+.disabled{
+    display: none;
+}
+
 .main-container{
     position: relative;
     width: 400px;
